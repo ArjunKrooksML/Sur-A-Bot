@@ -83,7 +83,7 @@ def get_response(intents, prompts, restaurants, context):
 def get_gemini_response(message):
 
     try:
-        genai.configure(api_key = 'AIzaSyBCcgEbagnThqnJdGuPfdWhEZlYl-xdOa8' )
+        genai.configure(api_key = '' )
         model = genai.GenerativeModel('gemini-pro')
         response = model.generate_content(message)
         return response.text
